@@ -1,0 +1,972 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#"
+     xml:base="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slowDoS</rdfs:label>
+        <dc:description xml:lang="en">slow DoS attack ontology</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_max -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_max">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_mean -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_mean">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_min -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_min">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_std -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT_std">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_IAT -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_IAT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_act_data_bwd -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_act_data_bwd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_act_data_fwd -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_act_data_fwd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_bwd_stats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_bwd_stats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_communication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_communication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_communication"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Attack"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol_contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_flow_stats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_flow_stats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_fwd_stats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_fwd_stats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_seg_size -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_seg_size">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_window_stats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#has_window_stats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol_contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol_contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol_contains"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol_contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#results_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#results_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#results_in"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Attack"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#results_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Slow_DoS"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Max">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Mean -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Mean">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Min">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Std -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Std">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Total -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Total">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_Packetspss -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_Packetspss">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Bytesps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Bytesps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Max">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Mean -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Mean">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Min">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Std -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Std">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Packetsps -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Packetsps">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Max">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Mean -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Mean">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Min">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Std -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Std">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Total -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Total">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_Packetspss -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_Packetspss">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_backward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_backward">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_forward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_forward">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#act_data_pkt_fwd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#act_data_pkt_fwd">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min_seg_size_forward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min_seg_size_forward">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Max -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Max">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Mean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Mean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Min -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Min">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Std -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Std">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Total -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Total">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Slow_DoS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Duration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Duration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Max -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Max">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Mean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Mean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Min -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Min">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Std -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Std">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Max -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Max">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Mean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Mean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Min -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Min">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Std -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Std">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Total -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Total">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Slow_DoS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_backward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_backward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#window"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_forward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Init_Win_bytes_forward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#window"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Line"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Header -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Header">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#HTTP_Message"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response_Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response_Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response_Header -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response_Header">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Status_Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Status_Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#URI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#URI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Line"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Version -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Version">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Line"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#act_data_pkt_fwd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#act_data_pkt_fwd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#max -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#max">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#mean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#mean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min_seg_size_forward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min_seg_size_forward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#protocol"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#std -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#std">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#IAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#window -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#window">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_Packets/s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_Packets/s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Bytes/s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Bytes/s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Packets/s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Packets/s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_Packets/s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_Packets/s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Attack">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Slow_DoS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Slow_DoS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Attack"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#slowloris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#slowloris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/untitled-ontology-8#Slow_DoS"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Max"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">10350000</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Mean"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">254.5</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Packetsps"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2102</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Std"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">16450000</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Max"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Mean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Min"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Std"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_IAT_Total"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Bwd_Packets/s"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Max"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Mean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Min"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_IAT_Std"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Bytes/s"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Flow_Packets/s"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Max"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Mean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Min"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Std"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_IAT_Total"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Fwd_Packets/s"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Method"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#URI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Version"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Body"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Header"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Request_Line"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response_Body"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Response_Header"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#Status_Line"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#act_data_pkt_fwd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min_seg_size_forward"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#window"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#backward"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#flow_based"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#forward"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#window"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#max"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#mean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#min"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shantanu/ontologies/2018/2/slow_dos#std"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
