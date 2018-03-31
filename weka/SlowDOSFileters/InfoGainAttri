@@ -1,0 +1,176 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     slow_loris_filtered-weka.filters.unsupervised.attribute.Remove-R1-7
+Instances:    31259
+Attributes:   77
+               Flow Duration
+               Total Fwd Packets
+               Total Backward Packets
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Packet Length Max
+               Fwd Packet Length Min
+               Fwd Packet Length Mean
+               Fwd Packet Length Std
+              Bwd Packet Length Max
+               Bwd Packet Length Min
+               Bwd Packet Length Mean
+               Bwd Packet Length Std
+              Flow Bytes/s
+               Flow Packets/s
+               Flow IAT Mean
+               Flow IAT Std
+               Flow IAT Max
+               Flow IAT Min
+              Fwd IAT Total
+               Fwd IAT Mean
+               Fwd IAT Std
+               Fwd IAT Max
+               Fwd IAT Min
+              Bwd IAT Total
+               Bwd IAT Mean
+               Bwd IAT Std
+               Bwd IAT Max
+               Bwd IAT Min
+              Fwd PSH Flags
+               Bwd PSH Flags
+               Fwd URG Flags
+               Bwd URG Flags
+               Fwd Header Length
+               Bwd Header Length
+              Fwd Packets/s
+               Bwd Packets/s
+               Min Packet Length
+               Max Packet Length
+               Packet Length Mean
+               Packet Length Std
+               Packet Length Variance
+              FIN Flag Count
+               SYN Flag Count
+               RST Flag Count
+               PSH Flag Count
+               ACK Flag Count
+               URG Flag Count
+               CWE Flag Count
+               ECE Flag Count
+               Down/Up Ratio
+               Average Packet Size
+               Avg Fwd Segment Size
+               Avg Bwd Segment Size
+              Fwd Avg Bytes/Bulk
+               Fwd Avg Packets/Bulk
+               Fwd Avg Bulk Rate
+               Bwd Avg Bytes/Bulk
+               Bwd Avg Packets/Bulk
+              Bwd Avg Bulk Rate
+              Subflow Fwd Packets
+               Subflow Fwd Bytes
+               Subflow Bwd Packets
+               Subflow Bwd Bytes
+              Init_Win_bytes_forward
+               Init_Win_bytes_backward
+               act_data_pkt_fwd
+               min_seg_size_forward
+              Active Mean
+               Active Std
+               Active Max
+               Active Min
+              Idle Mean
+               Idle Std
+               Idle Max
+               Idle Min
+               Label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 77  Label):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.55774    18  Flow IAT Max
+ 0.55219     6  Fwd Packet Length Max
+ 0.54929    23  Fwd IAT Max
+ 0.54224    39  Max Packet Length
+ 0.54158    62  Subflow Fwd Bytes
+ 0.54158     4 Total Length of Fwd Packets
+ 0.53787    40  Packet Length Mean
+ 0.53669     1  Flow Duration
+ 0.53235    15  Flow Packets/s
+ 0.52621    21  Fwd IAT Mean
+ 0.52167    16  Flow IAT Mean
+ 0.52067    53  Avg Fwd Segment Size
+ 0.52067     8  Fwd Packet Length Mean
+ 0.52066    36 Fwd Packets/s
+ 0.51747    17  Flow IAT Std
+ 0.5103     52  Average Packet Size
+ 0.50658    20 Fwd IAT Total
+ 0.49626    41  Packet Length Std
+ 0.49626    42  Packet Length Variance
+ 0.45481    65 Init_Win_bytes_forward
+ 0.43123    14 Flow Bytes/s
+ 0.41424    24  Fwd IAT Min
+ 0.40185    37  Bwd Packets/s
+ 0.39405    34  Fwd Header Length
+ 0.37077    54  Avg Bwd Segment Size
+ 0.37077    12  Bwd Packet Length Mean
+ 0.35428    66  Init_Win_bytes_backward
+ 0.35378    22  Fwd IAT Std
+ 0.34631    28  Bwd IAT Max
+ 0.34405    26  Bwd IAT Mean
+ 0.34048    19  Flow IAT Min
+ 0.32918    25 Bwd IAT Total
+ 0.32916    29  Bwd IAT Min
+ 0.29971     7  Fwd Packet Length Min
+ 0.28768    75  Idle Max
+ 0.28691    73 Idle Mean
+ 0.28559    71  Active Max
+ 0.2826     69 Active Mean
+ 0.27721    64  Subflow Bwd Bytes
+ 0.27721     5  Total Length of Bwd Packets
+ 0.27094    10 Bwd Packet Length Max
+ 0.26889    72  Active Min
+ 0.2645     76  Idle Min
+ 0.25617    35  Bwd Header Length
+ 0.25439     9  Fwd Packet Length Std
+ 0.21628    38  Min Packet Length
+ 0.19717    27  Bwd IAT Std
+ 0.19022    11  Bwd Packet Length Min
+ 0.18849    13  Bwd Packet Length Std
+ 0.18064    63  Subflow Bwd Packets
+ 0.18064     3  Total Backward Packets
+ 0.17399    61 Subflow Fwd Packets
+ 0.17399     2  Total Fwd Packets
+ 0.17233    74  Idle Std
+ 0.17043    68  min_seg_size_forward
+ 0.16841    67  act_data_pkt_fwd
+ 0.1666     70  Active Std
+ 0.09272    46  PSH Flag Count
+ 0.06199    51  Down/Up Ratio
+ 0.04948    44  SYN Flag Count
+ 0.04948    30 Fwd PSH Flags
+ 0.00884    48  URG Flag Count
+ 0.00562    43 FIN Flag Count
+ 0.0015     47  ACK Flag Count
+ 0          33  Bwd URG Flags
+ 0          60 Bwd Avg Bulk Rate
+ 0          45  RST Flag Count
+ 0          31  Bwd PSH Flags
+ 0          50  ECE Flag Count
+ 0          49  CWE Flag Count
+ 0          55 Fwd Avg Bytes/Bulk
+ 0          59  Bwd Avg Packets/Bulk
+ 0          58  Bwd Avg Bytes/Bulk
+ 0          57  Fwd Avg Bulk Rate
+ 0          32  Fwd URG Flags
+ 0          56  Fwd Avg Packets/Bulk
+
+Selected attributes: 18,6,23,39,62,4,40,1,15,21,16,53,8,36,17,52,20,41,42,65,14,24,37,34,54,12,66,22,28,26,19,25,29,7,75,73,71,69,64,5,10,72,76,35,9,38,27,11,13,63,3,61,2,74,68,67,70,46,51,44,30,48,43,47,33,60,45,31,50,49,55,59,58,57,32,56 : 76
+
