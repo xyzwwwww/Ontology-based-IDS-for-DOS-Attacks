@@ -1,0 +1,60 @@
+ 	Feature 	Mean Ranking
+37 	Bwd IAT Max 	0.94
+10 	Bwd IAT Mean 	0.76
+35 	Flow IAT Mean 	0.71
+29 	Flow IAT Std 	0.67
+9 	Flow Packets/s 	0.67
+38 	Flow IAT Max 	0.63
+50 	Fwd IAT Max 	0.60
+33 	Bwd IAT Min 	0.53
+30 	min_seg_size_forward 	0.48
+54 	Flow Duration 	0.43
+55 	Packet Length Mean 	0.41
+28 	Max Packet Length 	0.40
+56 	Init_Win_bytes_forward 	0.37
+11 	Bwd Packet Length Max 	0.36
+45 	Fwd Packet Length Min 	0.35
+53 	Bwd Packet Length Mean 	0.35
+48 	Total Length of Fwd Packets 	0.34
+15 	Total Length of Bwd Packets 	0.33
+16 	Init_Win_bytes_backward 	0.33
+12 	Fwd IAT Total 	0.33
+26 	Fwd IAT Mean 	0.32
+41 	Fwd IAT Min 	0.32
+17 	Packet Length Variance 	0.32
+51 	Flow IAT Min 	0.31
+49 	Bwd Packets/s 	0.30
+20 	Idle Max 	0.29
+8 	Down/Up Ratio 	0.28
+23 	Packet Length Std 	0.28
+39 	Bwd IAT Total 	0.27
+43 	Bwd IAT Std 	0.27
+0 	Idle Mean 	0.27
+18 	Avg Bwd Segment Size 	0.27
+57 	Fwd IAT Std 	0.26
+22 	Active Max 	0.25
+52 	Fwd Header Length 	0.25
+14 	PSH Flag Count 	0.23
+27 	Bwd Packet Length Min 	0.22
+4 	Bwd Packet Length Std 	0.22
+7 	Active Mean 	0.22
+47 	Fwd PSH Flags 	0.20
+32 	Bwd Header Length 	0.20
+19 	Active Std 	0.19
+6 	Fwd Packet Length Mean 	0.19
+42 	Total Backward Packets 	0.19
+40 	Fwd Packet Length Max 	0.19
+21 	Fwd Packet Length Std 	0.17
+2 	Average Packet Size 	0.17
+44 	Flow Bytes/s 	0.17
+5 	Min Packet Length 	0.16
+34 	Idle Std 	0.16
+36 	Total Fwd Packets 	0.12
+46 	Active Min 	0.11
+13 	Fwd Packets/s 	0.10
+31 	Idle Min 	0.09
+25 	act_data_pkt_fwd 	0.07
+24 	URG Flag Count 	0.06
+3 	ACK Flag Count 	0.05
+1 	FIN Flag Count 	0.03
+58 	RST Flag Count 	0.01
