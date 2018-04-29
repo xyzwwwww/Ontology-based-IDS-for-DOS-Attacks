@@ -1,8 +1,8 @@
 # IDS_Ontology
 Using feature selection algorithms to pick important features for slow DoS attacks.
 
-Generating rules to detect slow DoS attacks using Decision trees.
+Generating multi label classifiers to detect four classes of slow dos attack
 
-Converting the set of most efficient set of rules into SPARQL Queries and applying them to developed slow DoS Ontology.
+Signature for slowloris attack
 
-SPARLQ ML.
+Attack ontology for slowdos
