@@ -1,0 +1,15 @@
+##correlation
+
+
+==1	:
+
+
+
+
+>=0.90	:
+
+
+##variance is 0
+
+
+
